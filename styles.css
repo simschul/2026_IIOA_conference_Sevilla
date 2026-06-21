@@ -1,0 +1,139 @@
+/* Base appearance: everything normal */
+.reveal .posterior, .reveal .likelihood, .reveal .prior {
+  opacity: 1;
+}
+
+/* PRIOR slide */
+.reveal section.focus-prior .posterior,
+.reveal section.focus-prior .likelihood { opacity: 0.25; }
+
+.reveal section.focus-prior .prior {
+  opacity: 1;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+/* LIKELIHOOD slide */
+.reveal section.focus-likelihood .posterior,
+.reveal section.focus-likelihood .prior { opacity: 0.25; }
+
+.reveal section.focus-likelihood .likelihood {
+  opacity: 1;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+/* POSTERIOR slide */
+.reveal section.focus-posterior .likelihood,
+.reveal section.focus-posterior .prior { opacity: 0.25; }
+
+.reveal section.focus-posterior .posterior {
+  opacity: 1;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.small-table table {
+  font-size: 0.75em; /* try 0.8em or 0.7em */
+}
+
+
+/* --- Title slide layout & background --- */
+#title-slide,
+.reveal section.title-slide {
+  /* subtle “serious academic” gradient */
+  padding-top: 90px;
+}
+
+/* keep title block from feeling cramped */
+#title-slide .quarto-title-block {
+  max-width: 980px;
+}
+
+/* --- Typography hierarchy --- */
+#title-slide h1 {
+  font-size: 64px;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin-bottom: 18px;
+}
+
+#title-slide p.subtitle,
+#title-slide .subtitle {
+  font-size: 30px;
+  line-height: 1.25;
+  opacity: 0.92;
+  margin-top: 0;
+  margin-bottom: 46px;
+}
+
+/* author / affiliation / date block */
+#title-slide .quarto-title-authors,
+#title-slide .quarto-title-meta {
+  font-size: 22px;
+  line-height: 1.35;
+  opacity: 0.92;
+}
+
+/* give the meta block a visual anchor */
+#title-slide .quarto-title-meta {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 2px solid rgba(255,255,255,0.18);
+  max-width: 720px;
+}
+
+/* optional: add a small “event tag” feel */
+#title-slide .quarto-title-meta::before {
+  content: "GWS IO-Workshop";
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin-bottom: 10px;
+}
+
+/* reduce visual noise from slide number/progress on the title slide only */
+#title-slide .slide-number,
+#title-slide .progress {
+  opacity: 0.25;
+}
+
+.reveal .model-decision-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.reveal .model-decision-panel {
+  flex: 0 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reveal .model-decision-arrow {
+  flex: 0 0 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reveal .model-decision-panel img,
+.reveal .model-decision-arrow img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.reveal .small-source {
+  font-size: 0.45em;
+  line-height: 1.2;
+  margin-top: 0.35rem;
+  text-align: left;
+  width: 100%;
+}

@@ -1,0 +1,50 @@
+---
+title: "test"
+format: revealjs
+---
+
+
+
+
+## Slide title
+
+:::::: {.columns}
+
+::: {.column width="33%"}
+
+```{r}
+#| fig-width: 4
+#| fig-height: 2.2
+library(ggplot2)
+library(patchwork)
+
+ggplot()
+
+```
+
+
+:::
+
+::: {.column width="66%"}
+
+```{r}
+#| fig-width: 8
+#| fig-height: 2.2
+library(ggplot2)
+library(patchwork)
+
+
+p1 <- ggplot()
+p2 <- ggplot()
+p1 + p2
+
+```
+
+
+- blud
+- lkjfd
+- lkjef
+
+:::
+
+::::::
