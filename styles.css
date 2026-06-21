@@ -139,4 +139,15 @@
 }
 
 
+.reveal .center-title h2 {
+  text-align: center;
+}
 
+.reveal .wrap-links .column {
+  min-width: 0;
+}
+
+.reveal .wrap-links a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}

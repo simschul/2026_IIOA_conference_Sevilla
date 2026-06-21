@@ -313,7 +313,7 @@ make_scatter_plot("Strong negative correlation")
 
 -   IOTs/SUTs are compiled from heterogeneous, incomplete and sometimes conflicting data sources
 
--   need for **balancing** (reconciliation) to satisfy key accounting and consistency constraints: e.g. supply = demand, input = output
+-   need for **balancing** (reconciliation) to satisfy key accounting and consistency constraints: supply = demand, input = output
 
 -   accounting constraints induce **dependencies** between flows: more output requires more input, more demand requires more supply
 
@@ -601,11 +601,11 @@ Due to use of soft constraints that still allow for deviation from the constrain
 
 ------------------------------------------------------------------------
 
-## Closing the loop: from complex SUTs to robust decisions {.smaller}
+<!-- ## Closing the loop: from complex SUTs to robust decisions {.smaller} -->
 
 ::::: columns
 ::: {.column width="33%"}
-**Where we started**
+### From:
 
 ```{r}
 #| fig-width: 4
@@ -624,7 +624,7 @@ Point estimates hide uncertainty and dependencies.
 :::
 
 ::: {.column .fragment width="66%"}
-**Bayesian balancing provides**
+### To:
 
 ```{r}
 #| fig-width: 8
@@ -647,10 +647,12 @@ p1 + p2
 
 ```
 
+**Bayesian balancing provides**
+
 -   a posterior ensemble of balanced SUTs
 -   uncertainty intervals and covariances
 -   diagnostics of data–constraint tensions
--   direct propagation to decision probabilities
+-   direct propagation to decision probabilities:
 
 $P(\text{footprint}_A < \text{footprint}_B\mid \text{data, constraints})$
 :::
@@ -658,36 +660,31 @@ $P(\text{footprint}_A < \text{footprint}_B\mid \text{data, constraints})$
 
 ------------------------------------------------------------------------
 
-## Thank you
+## Thank you {.center-title .smaller .wrap-links}
 
 ![](figs/traceplot2.png){width="1260"}
 
+::::: {.columns}
 
-
-
-
-::::: columns
-::: {.column width="66%"}
-
-
--   Slides: <https://simschul.github.io/2026_IO_workshop/>
--   Working paper: <https://freidok.uni-freiburg.de/data/279579> -->
-- Contact: [simon.schulte\@indecol.uni-freiburg.de](simon.schulte@indecol.uni-freiburg.de)
-
+::: {.column width="25%"}
+![](figs/qr-code_paper.png)
 
 :::
 
-::: {.column width="33%"}
+::: {.column width="50%"}
+Contact: [simon.schulte\@indecol.uni-freiburg.de](simon.schulte@indecol.uni-freiburg.de)
 
+👈 Slides: <https://simschul.github.io/2026_IIOA_conference_Sevilla/>
+
+Working paper: <https://freidok.uni-freiburg.de/data/279579> 👉
+:::
+
+::: {.column width="25%"}
 ![](figs/qr-code.png)
-
 :::
 :::::
 
-
---------------------------------------------------------------
-
-
+------------------------------------------------------------------------
 
 ## Discussion
 
@@ -834,3 +831,4 @@ $$
 ## Comparison with deterministic WLS
 
 ![](plots/pyomo_vs_posterior.png){width="100%"}
+:::::::::
